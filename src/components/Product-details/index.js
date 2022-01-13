@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { Col, Row, Tabs, Rate, List, Input, Divider, Button  } from "antd"; 
 import { PlusOutlined, MinusOutlined } from '@ant-design/icons';
 import './style.scss'; 
+import { Link } from "react-router-dom";
 const { TabPane } = Tabs; 
 
 const ProductDetails = (params) => {
@@ -59,7 +60,7 @@ const ProductDetails = (params) => {
                                     <List.Item>Bluetooth Version: Bluetooth 5.0</List.Item>
                                 </List>
                                 <Divider></Divider>
-                                <div className="">
+                                <div className="d-flex align-items-end">
                                     <div>
                                         <small>Quantity:</small>
                                         <div className="d-flex counter__box"> 
@@ -68,6 +69,7 @@ const ProductDetails = (params) => {
                                             <Button onClick={decrementCounter}><MinusOutlined /></Button>
                                         </div>
                                     </div>
+                                    <Button type="primary"><Link to="/">Add to cart</Link></Button>
                                 </div>
                                 <Divider></Divider>
                                 
