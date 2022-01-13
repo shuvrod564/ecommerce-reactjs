@@ -8,28 +8,19 @@ import {
     Routes, useRoutes 
 } from "react-router-dom";
 
-import HomePage from './homepage';
-import SearchPage from './search-product';
-import ProductDetails from './Product-details';
+import HomePage from './Pages/Homepage';
+import SearchPage from './Pages/Search-Product';
+import ProductDetails from './Pages/Product-details';
+import Cart from './Pages/Cart';
 
 const Routing = () => {
     const routes = useRoutes([
         { path: '/', element: <HomePage /> },
         { path: 'search', element: <SearchPage /> },
         { path: 'product-details', element: <ProductDetails /> },
-        // { path: 'galerija', element: <Gallery /> },
-        // { path: 'cjenovnik', element: <Prices /> },
-        // { path: 'kontakt', element: <Contact /> }
-    ]);
-
-    return routes;
-    // return (
-    //     <>
-    //         <Routes>
-    //             <Route exact path="/" component={HomePage} />
-    //         </Routes>
-    //     </>
-    // )
+        { path: 'cart', element: <Cart /> }
+    ]); 
+    return routes; 
 }
 
 export default Routing;

@@ -1,0 +1,50 @@
+%centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart__items {
+    img {
+        max-width: 100px;
+        height: 100px;
+    }
+    .caption {
+        width: calc(100% - 100px);
+        padding-left: 1rem;
+
+        .pname {
+            font-size: 1.1rem;
+            color: var(--brand);
+            line-height: 1.1;
+            display: block;
+        }
+
+        .counter__box{
+            max-width: 120px;
+            .ant-btn {
+                width: 35px;
+                padding: 0%;
+                height: 30px;
+                @extend %centered;
+                svg {
+                    width: 11px;
+                    height: 11px;
+                }
+            }
+            .ant-input {
+                height: 30px;
+                pointer-events: none;
+                width: calc(100% - 70px);
+                text-align: center;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.ant-btn.btn-lg {
+    height: 42px;
+    line-height: 40px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}

@@ -12,20 +12,16 @@
         line-height: 1.2;
         display: block;
         margin: 1rem 0 .45rem 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+        max-width: 289px;
     }
 
-    .ant-rate-star {
-        pointer-events: none;
-
-        &.ant-rate-star-full {
-            svg {
-                color: var(--yellow);
-            }
-        }
-    }
-    .ant-rate-star:not(:last-child) {
-        margin-right: 2px !important;
-    }
+    
     .anticon svg { 
         width: 1rem !important;
         height: 1rem !important;
@@ -41,8 +37,8 @@
         transition: all .3s ease-in-out;
         img {
             margin-right: .5rem;
-            position: relative;
-            top: 2px;
+            // position: relative;
+            // top: 2px;
             transition: all .3s ease-in-out;
         }
 

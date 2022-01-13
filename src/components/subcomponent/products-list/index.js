@@ -4,7 +4,7 @@ import './style.scss';
 import {Card, Col, Row, Button, Tree} from 'antd';
 import { Rate } from 'antd';  
 import { Link } from "react-router-dom";
-// import products from "../../data/products";
+import Products from "../../data/products";
 
 const index = (props) => {
     // const [Product, setProduct]=useState(props.productList)
@@ -14,7 +14,7 @@ const index = (props) => {
                 <Card title="Deals Of The Day" extra={<a href="#">More</a>}>
                     <Row gutter={[14,20]}>
                         {
-                            props.topDeals.products.map(product => {
+                            Products.products.map(product => {
                                 return <Col lg={4} md={6} sm={8} key={product._id}>
                                     <Card hoverable size="small" className="d-block product__card">
                                         <div className="discount px-2 d-inline-block position-absolute top-0 end-0 bg-danger text-white">
@@ -33,9 +33,11 @@ const index = (props) => {
                                             <del className=" ps-4 d-inline-block text-muted">{product.pprice}</del>
                                         </div>
                                         <div className="text-center pt-2"> 
-                                            <Button type="primary" href="/" className="d-inline-flex align-items-center">
-                                                <img src="images/icons/shopping-cart.png" width={16} height={16} alt="Shopping-cart" /> 
-                                                Add to cart
+                                            <Button type="primary" className="d-inline-flex align-items-center">
+                                                <Link to="/product-details" className="d-flex align-items-center">
+                                                    <img src="images/icons/shopping-cart.png" width={16} height={16} alt="Shopping-cart" /> 
+                                                    Add to cart
+                                                </Link> 
                                             </Button>
                                         </div>
                                     </Card>

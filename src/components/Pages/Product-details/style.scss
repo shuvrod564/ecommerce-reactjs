@@ -1,0 +1,50 @@
+
+.p__details__box {
+
+    .thumbnail {
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    .ant-tabs-left > .ant-tabs-nav .ant-tabs-tab {
+        padding: 0px 6px;
+    }
+    .ant-tabs-left > .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab {
+        margin: 5px 0 0 0;
+    }
+}
+
+.p__details__desc {
+    .counter__box {
+        max-width: 140px;
+        .ant-input {
+            border-left: 0;
+            border-right: 0;
+        }
+        .ant-btn {
+            display: inline-flex;
+            align-items: center;
+            svg {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+    .ant-btn-primary {
+        min-height: 47px;
+        padding: 0 30px;
+        margin: 0 5px;
+
+        svg {
+            width: 16px;
+            height: 16px;
+            position: relative;
+            top: -2px;
+        }
+    }
+
+    .ant-list-split .ant-list-item {
+        border-bottom: 0;
+        padding: 0px 0px;
+    }
+}

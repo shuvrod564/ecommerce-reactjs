@@ -1,16 +1,19 @@
 
+import React from 'react';
 import './style.scss';
 import {Row, Col, Card} from 'antd';
 
-const TopCategories = (props) => {
-    // console.log(props.catList);
+import Categories from "../../data/categories";
+
+const TopCategories = () => {
+     
     return (
         <>
             <section className="pb-5">
                 <div className="container">
                     <Row gutter={[16, 16]}>
                         {
-                            props.catList.categories.map(category=>{
+                            Categories.categories.map(category=>{
                                 return <Col lg={8} md={12} sm={12} xs={24} key={category._id.toString()} className='d-flex'>
                                 <Card bordered={true} className='bg-light top__category__card shadow-sm border w-100'>
                                     <div className='d-flex '>

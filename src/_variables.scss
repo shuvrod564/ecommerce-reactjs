@@ -2,3 +2,26 @@
     border-bottom: 0 !important;
     content: none;
 }
+
+%centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ant-input {
+    font-family: var(--work);
+}
+
+.ant-card { 
+    font-family: var(--work);
+}
+
+.ant-divider { 
+    font-family: var(--work);
+    border-top: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.ff-roboto {
+    font-family: var(--lato);
+}

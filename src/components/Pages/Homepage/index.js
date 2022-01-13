@@ -1,16 +1,14 @@
 import React from 'react';
 
-import HeaderSLider from '../subcomponent/header-banner';
-import ProCategories from '../subcomponent/product-categories';
-import SellDetails from '../subcomponent/sell-details';
-import TodayDeal from '../subcomponent/products-list';
-import BestSeller from '../subcomponent/best-seller/ProductCard';
-import TopCategories from '../subcomponent/top-categories';
- 
-import productList from '../data/products';
-import categories from '../data/categories';
+import HeaderSLider from '../../subcomponent/Header-Banner';
+import ProCategories from '../../subcomponent/Product-Categories';
+import SellDetails from '../../subcomponent/Sell-Details';
+import TodayDeal from '../../subcomponent/Products-List';
+import BestSeller from '../../subcomponent/Best-Seller';
+import TopCategories from '../../subcomponent/Top-Categories';
+  
 
-export default function index() {
+export default function Homepage() {
     return (
         <div>
             {/* ---- Header Carousel Section ---------- */}
@@ -21,13 +19,13 @@ export default function index() {
                     <ProCategories />
 
                     {/* ----- Selling Details ----- */}
-                    {/* <SellDetails />  */}
+                    <SellDetails /> 
  
                 </div>
             </header>
 
             {/* Todays Details */} 
-            <TodayDeal topDeals={productList} />
+            <TodayDeal />
 
             <section className='mt-5'>
                 <div className='container'>
@@ -37,9 +35,9 @@ export default function index() {
                 </div>
             </section>
 
-            <BestSeller proList={productList} />
+            <BestSeller />
 
-            <TopCategories catList={categories} />
+            <TopCategories />
 
         </div>
     )
