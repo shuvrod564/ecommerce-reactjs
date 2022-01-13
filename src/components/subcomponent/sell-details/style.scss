@@ -1,0 +1,25 @@
+
+.sell__detail__card {
+    img {
+        width: 3.5rem;
+    }
+    .caption {
+        width: calc(100% - 3.5rem);
+        padding-left: 1rem;
+    }
+
+    &.divider {
+        position: relative;
+        &::before {
+            content: '';
+            width: 1px;
+            height: 3rem;
+            display: block;
+            background-color: var(--bs-gray-400);
+            position: absolute;
+            top: 50%;
+            left: -4%;
+            transform: translateY(-50%);
+        }
+    }
+}

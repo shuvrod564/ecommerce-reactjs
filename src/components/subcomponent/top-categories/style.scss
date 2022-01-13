@@ -1,0 +1,21 @@
+.top__category__card {
+    .cat__img {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .caption{
+        width: calc(100% - 7rem); 
+        ul {
+            li {
+                &::before {
+                    content: "\2605";
+                    font-size: .875rem;
+                    display: inline-block;
+                    color: currentColor;
+                    margin-right: .25rem;
+                }
+            }
+        }
+    }
+}

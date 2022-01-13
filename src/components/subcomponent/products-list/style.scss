@@ -1,0 +1,59 @@
+
+
+.product__card {
+    position: relative;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+
+    .pro__title {
+        text-transform: capitalize;
+        color: var(--brand);
+        font-family: var(--work), var(--lato);
+        line-height: 1.2;
+        display: block;
+        margin: 1rem 0 .45rem 0;
+    }
+
+    .ant-rate-star {
+        pointer-events: none;
+
+        &.ant-rate-star-full {
+            svg {
+                color: var(--yellow);
+            }
+        }
+    }
+    .ant-rate-star:not(:last-child) {
+        margin-right: 2px !important;
+    }
+    .anticon svg { 
+        width: 1rem !important;
+        height: 1rem !important;
+        // color: var(--yellow) !important;
+    }
+    .ant-btn-primary {
+        border-radius: .25rem;
+        font-family: var(--work);
+        background-color: transparent;
+        color: var(--bs-gray-600);
+        border-color: var(--bs-gray-100);
+        box-shadow: 0 1px 3px 2px #6c757d3d; 
+        transition: all .3s ease-in-out;
+        img {
+            margin-right: .5rem;
+            position: relative;
+            top: 2px;
+            transition: all .3s ease-in-out;
+        }
+
+        &:hover {
+            img {
+                filter: contrast(0) brightness(10);
+            }
+        }
+    }
+
+    .text-info {
+        color: var(--third) !important;
+    } 
+}

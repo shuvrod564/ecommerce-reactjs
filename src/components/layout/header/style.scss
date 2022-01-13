@@ -1,0 +1,30 @@
+.top__nav {
+    background-color: var(--light-blue);
+
+    .ant-menu {
+        background-color: transparent;
+    }
+
+    // .logo img {
+    //     max-height: 2rem;
+    // }
+
+    .main__search__box {
+        min-width: 550px;
+    }
+    .user__btn { 
+        padding: 0 .25rem;
+        svg {
+            width: 32px;
+            height: 32px;
+            path {
+                fill: var(--bs-orange);
+            }
+        }
+    }
+
+    .ant-btn-primary { 
+        border-color: var(--bs-orange);
+        background: var(--bs-orange); 
+    }
+}

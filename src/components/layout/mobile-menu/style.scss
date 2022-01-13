@@ -1,0 +1,37 @@
+
+
+.drawer__btn {
+    svg {
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+}
+
+.ant-menu-submenu-title {
+    img {
+        width: 2.75rem;
+        height: 2.75rem;
+    }
+}
+
+
+.mobile__nav{
+    background: #2d383e;
+    .logo {
+        img {
+            width: auto;
+            height: 30px; 
+        }
+    }
+
+    .user__btn { 
+        padding: 0 .25rem;
+        svg {
+            width: 1.75rem;
+            height: 1.65rem;
+            path {
+                fill: #fff;
+            }
+        }
+    }
+}
