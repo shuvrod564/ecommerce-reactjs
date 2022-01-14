@@ -4,6 +4,7 @@ import './style.scss';
 import { Menu, Row, Col, Dropdown } from 'antd';
 import { MailOutlined, HeartOutlined, SettingOutlined } from '@ant-design/icons';
 import { DownOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 const { SubMenu } = Menu;
  
 
@@ -60,28 +61,28 @@ export default function index() {
 
                     <Menu mode="horizontal" className='border-0 right__panel'> 
                             <Menu.Item key="app" style={{marginLeft:'auto'}}>
-                                <a href="#" className='nav-link'>
+                                <Link to="/search" className='nav-link'>
                                     <img src="images/icons/household-electronics.svg" alt='icon' /> 
                                     <span>Household <br/>Electro</span>
-                                </a>
+                                </Link>
                             </Menu.Item>
                             <Menu.Item key="accessories">
-                                <a href="#" className='nav-link'>
+                                <Link to="/search" className='nav-link'>
                                     <img src="images/icons/cellphone.svg" /> 
                                     <span>Cell Phones & Accessories</span>
-                                </a> 
+                                </Link> 
                             </Menu.Item>
                             <Menu.Item key="computing">
-                                <a href="#" className='nav-link'>
+                                <Link to="/search" className='nav-link'>
                                     <img src="images/icons/cellphone.svg"/>
                                     <span>Computing</span>
-                                </a> 
+                                </Link> 
                             </Menu.Item>
                             <Menu.Item key="sound">
-                                <a href="#" className='nav-link'>
+                                <Link to="/search" className='nav-link'>
                                     <img src="images/icons/image-sound.svg"/>
                                     <span>Image and Sound</span>
-                                </a> 
+                                </Link> 
                             </Menu.Item>
                     </Menu> 
 

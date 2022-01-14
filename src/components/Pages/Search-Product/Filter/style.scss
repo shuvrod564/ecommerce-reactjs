@@ -1,0 +1,41 @@
+
+
+.filter__menu {
+    .ant-menu {
+        width: 100%;
+    }
+    .ant-menu-sub.ant-menu-inline > .ant-menu-item, .ant-menu-sub.ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title {
+        height: auto;
+        line-height: 1.2;
+        list-style-position: inside;
+        list-style-type: disc;
+        font-family: var(--roboto);
+        padding-left: 30px !important;
+    }
+
+    .ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title {
+        height: auto;
+        line-height: 1.5;
+        font-size: 15px;
+        font-family: var(--work);
+        font-weight: 500;
+        padding-left: 18px !important;
+    }
+
+    .ant-checkbox-wrapper {
+        margin-left: 0 !important;
+        margin-bottom: 4px;
+        display: flex;
+        color: #757575;
+    }
+
+    .ant-input {
+        width: calc(50% - 36px);
+        margin-right: 6px;
+    }
+
+    .ant-btn-primary {
+        padding: 0 12px; 
+        line-height: 32px;
+    }
+}
